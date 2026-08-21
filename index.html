@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Budget Planner</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1><nav class="navbar">
+
+    <div class="logo">
+        ✈ Travel Budget Planner
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">Planner</a></li>
+
+        <li><a href="#">Budget</a></li>
+
+        <li><a href="#">Expenses</a></li>
+
+        <li><a href="#">Packing</a></li>
+
+        <li><a href="#">Dashboard</a></li>
+
+        <li><a href="#">About</a></li>
+
+    </ul>
+
+   <div class="nav-buttons">
+
+    <button class="theme-btn" onclick="toggleTheme()">
+        🌙 Dark Mode
+    </button>
+
+    <button class="start-btn">
+        Get Started
+    </button>
+
+</div>
+
+</nav><section class="hero fade-in"></section>
+
+    <div class="hero-text">
+
+        <h1>Plan Smart,<br>Travel Better</h1>
+
+        <p>
+            Organize your trips, calculate budgets,
+            track expenses and pack smarter—all in one place.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="primary-btn">
+                Start Planning
+            </button>
+
+            <button class="secondary-btn">
+                Learn More
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="travel.jpg" alt="Travel">
+
+    </div>
+
+</section><!-- ================= FEATURES ================= -->
+<!-- ================= DASHBOARD ================= -->
+
+<section class="dashboard fade-in">
+
+    <h2 class="section-title">Travel Dashboard</h2>
+
+    <div class="dashboard-container">
+
+        <div class="dashboard-card">
+
+            <i class="fas fa-map-marker-alt"></i>
+
+            <h3 id="tripCount">0</h3>
+
+            <p>Total Trips</p>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <i class="fas fa-wallet"></i>
+
+            <h3 id="budgetTotal">₹0</h3>
+
+            <p>Trip Budget</p>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <i class="fas fa-money-bill-wave"></i>
+
+            <h3 id="expenseCount">₹0</h3>
+
+            <p>Total Expenses</p>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <i class="fas fa-suitcase"></i>
+
+            <h3 id="packingCount">0</h3>
+
+            <p>Packing Items</p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= DESTINATION GALLERY ================= -->
+
+<section class="gallery fade-in">
+
+    <h2 class="section-title">Popular Destinations</h2>
+
+    <div class="gallery-container">
+
+        <div class="gallery-card">
+
+            <img src="images/ooty.jpg" alt="Ooty">
+
+            <h3>Ooty</h3>
+
+            <p>Budget: ₹10,000</p>
+
+            <p>⭐⭐⭐⭐⭐</p>
+
+        </div>
+
+        <div class="gallery-card">
+
+            <img src="images/goa.jpg" alt="Goa">
+
+            <h3>Goa</h3>
+
+            <p>Budget: ₹18,000</p>
+
+            <p>⭐⭐⭐⭐</p>
+
+        </div>
+
+        <div class="gallery-card">
+
+            <img src="images/manali.jpg" alt="Manali">
+
+            <h3>Manali</h3>
+
+            <p>Budget: ₹22,000</p>
+
+            <p>⭐⭐⭐⭐⭐</p>
+
+        </div>
+
+        <div class="gallery-card">
+
+            <img src="images/kerala.jpg" alt="Kerala">
+
+            <h3>Kerala</h3>
+
+            <p>Budget: ₹15,000</p>
+
+            <p>⭐⭐⭐⭐⭐</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="features fade-in">
+
+    <h2 class="section-title">Our Features</h2>
+
+    <div class="feature-container">
+
+        <div class="feature-card">
+
+            <i class="fas fa-map-marked-alt"></i>
+
+            <h3>Plan Your Trip</h3>
+
+            <p>Create and organize your travel plans easily.</p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fas fa-wallet"></i>
+
+            <h3>Budget Planner</h3>
+
+            <p>Estimate your travel expenses and stay within budget.</p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fas fa-chart-line"></i>
+
+            <h3>Expense Tracker</h3>
+
+            <p>Track every expense during your journey.</p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fas fa-suitcase-rolling"></i>
+
+            <h3>Packing List</h3>
+
+            <p>Create your checklist so you never forget essentials.</p>
+
+        </div>
+
+    </div>
+
+</section><!-- ================= STATISTICS ================= -->
+
+<section class="stats">
+
+    <h2 class="section-title">Travel Statistics</h2>
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+            <i class="fas fa-users"></i>
+            <h3>10K+</h3>
+            <p>Happy Travelers</p>
+        </div>
+
+        <div class="stat-card">
+            <i class="fas fa-globe-asia"></i>
+            <h3>250+</h3>
+            <p>Destinations</p>
+        </div>
+
+        <div class="stat-card">
+            <i class="fas fa-wallet"></i>
+            <h3>₹1M+</h3>
+            <p>Budget Managed</p>
+        </div>
+
+        <div class="stat-card">
+            <i class="fas fa-star"></i>
+            <h3>98%</h3>
+            <p>User Satisfaction</p>
+        </div>
+
+    </div>
+
+</section></h1>
+<!-- ================= FOOTER ================= -->
+
+<!-- ================= TRIP PLANNER ================= -->
+
+<section class="trip-planner fade-in">
+
+    <h2 class="section-title">Plan Your Trip</h2>
+
+    <div class="trip-form">
+
+        <input type="text" id="destination" placeholder="Destination">
+
+        <input type="date" id="startDate">
+
+        <input type="date" id="endDate">
+
+        <input type="number" id="travelers" min="0" placeholder="Number of Travelers">
+
+        <select id="transport">
+
+            <option>Select Transport</option>
+            <option>Bus</option>
+            <option>Train</option>
+            <option>Car</option>
+            <option>Flight</option>
+
+        </select>
+
+        <input type="number" id="budget" min="0" placeholder="Estimated Budget">
+
+        <button onclick="saveTrip()">
+            Save Trip
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Trip Details Output -->
+
+<section class="trip-output">
+
+    <h2>Your Planned Trip</h2>
+
+    <div id="tripResult">
+
+        No Trip Added Yet
+
+    </div>
+
+</section>
+<!-- ================= BUDGET CALCULATOR ================= -->
+
+<section class="budget-section fade-in">
+
+    <h2 class="section-title">Budget Calculator</h2>
+
+    <div class="budget-container">
+
+        <input type="number" id="hotel" min="0" placeholder="Hotel Cost">
+
+        <input type="number" id="food" min="0" placeholder="Food Cost">
+
+        <input type="number" id="transportCost" min="0" placeholder="Transport Cost">
+
+        <input type="number" id="shopping" min="0" placeholder="Shopping Cost">
+
+        <input type="number" id="others" min="0" placeholder="Other Expenses">
+
+        <button onclick="calculateBudget()">
+    Calculate Budget
+</button>
+
+<button onclick="clearBudget()">
+    Clear
+</button>
+
+    </div>
+
+    <div id="budgetResult" class="budget-result">
+
+        Total Budget: ₹0
+
+    </div>
+
+</section>
+<!-- ================= EXPENSE TRACKER ================= -->
+
+<section class="expense-section fade-in">
+
+    <h2 class="section-title">Expense Tracker</h2>
+
+    <div class="expense-form">
+
+        <input type="text" id="expenseName" min="0" placeholder="Expense Name">
+
+        <input type="number" id="expenseAmount" min="0" placeholder="Amount">
+
+     <button onclick="addExpense()">
+    Add Expense
+</button>
+
+<button onclick="clearExpenses()">
+    Clear All
+</button> 
+
+    </div>
+
+    <table class="expense-table">
+
+        <thead>
+
+            <tr>
+                <th>Expense</th>
+                <th>Amount (₹)</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="expenseBody">
+
+        </tbody>
+
+    </table>
+
+    <div class="expense-total">
+
+        Total Expenses:
+        <span id="expenseTotal">₹0</span>
+
+    </div>
+
+</section>
+<!-- ================= PACKING CHECKLIST ================= -->
+
+<section class="packing-section fade-in">
+
+    <h2 class="section-title">Packing Checklist</h2>
+
+    <div class="packing-container">
+
+        <input
+            type="text"
+            id="packingItem"
+            placeholder="Enter Item">
+
+     <button onclick="addItem()">
+    Add Item
+</button>
+
+<button onclick="clearPacking()">
+    Clear All
+</button>  
+
+    </div>
+
+    <ul id="packingList">
+
+    </ul>
+
+</section>
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+            <h2>✈ Travel Budget Planner</h2>
+
+            <p>
+                Plan Smart, Travel Better.
+                Manage your trips, budget and
+                packing list all in one place.
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Planner</a></li>
+
+                <li><a href="#">Budget</a></li>
+
+                <li><a href="#">Expenses</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Contact</h3>
+
+            <p>📧 travelplanner@gmail.com</p>
+
+            <p>📞 +91 9876543210</p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <i class="fab fa-facebook"></i>
+
+                <i class="fab fa-instagram"></i>
+
+                <i class="fab fa-twitter"></i>
+
+                <i class="fab fa-linkedin"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 Travel Budget Planner. All Rights Reserved.
+
+    </p>
+
+</footer>
+<button id="topBtn" onclick="scrollToTop()">
+    ↑
+</button>
+<script src="script.js"></script>
+
+</body>
+</html>
